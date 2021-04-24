@@ -1,0 +1,8 @@
+ * Serving Flask app "main" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Подключение к базе данных по адресу sqlite:///db/filmoteka.db?check_same_thread=False
+Война и мир 1965 Драма 373 Сергей Бондарчук 123История нескольких дворянских семей на фоне событий в Российской империи времен Наполеоновских войн. 
+('Война и мир',) ('1965',) ('Драма',) ('373',) ('Сергей Бондарчук',) 123История нескольких дворянских семей на фоне событий в Российской империи времен Наполеоновских войн. 

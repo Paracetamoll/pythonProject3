@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<style>
+   h2 {
+    margin-left: 20px;
+   }
+
+</style>
+
+<div class="blck_000">
+
+    <h3 class="theader">Описание фильма</h3>
+
+    <table border="1px">
+        <tr>
+            <td class="td1"> Наименование</td>
+            <td> {{film.title}}</td>
+        <tr>
+        <tr>
+            <td class="td1"> Год</td>
+            <td> {{film.year}}</td>
+        <tr>
+        <tr>
+            <td class="td1"> Жанр</td>
+            <td> {{film.genre}}</td>
+        <tr>
+        <tr>
+            <td class="td1"> Длительность, мин.</td>
+            <td> {{film.duration}}</td>
+        <tr>
+        <tr>
+            <td class="td1"> Режиссер</td>
+            <td> {{film.director}}</td>
+        <tr>
+        <tr>
+            <td class="td1"> Описание</td>
+            <td> {{film.description}}</td>
+        <tr>
+    </table>
+
+    {% if current_user.is_authenticated %}
+    <div class="bt">
+        <a href="/film_edit/{{film.id}}" class="btn btn-success"> Редактировать</a></li>
+        <a href="/film_delete/{{film.id}}" class="btn btn-danger">Удалить</a></li>
+    </div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

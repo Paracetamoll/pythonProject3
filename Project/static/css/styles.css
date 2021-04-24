@@ -1,0 +1,159 @@
+body { 
+	font-family: 'Arial';
+	background-color: #CC9966;
+	background-image: url('/static/image/fon.jpg');
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+ul.mainmenu{
+	list-style: none;
+	background: #336666;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	color: #fdc073;
+	font-size: 20px;
+	font-weight: bold;
+	overflow: hidden;
+    border-bottom: 2px solid #8B4513;
+}
+
+ul.mainmenu li {
+	float: left;
+	margin: 15px 10px 0 150px;
+}
+
+ul.mainmenu li a {
+	color: #fdc073;
+}
+
+ul.mainmenu li a:hover {
+	color: #FDA83D;
+	text-decoration: underline;
+}
+
+div.rrr {float: right;}
+
+.bt {
+   margin-left: 20px;
+   margin-top: 10px;
+   }
+
+.blck {
+   background: LightCyan;
+   margin: 0px 10px;
+   border-radius: 10px;
+}
+
+.main {
+   background: LightCyan;
+   margin: 0px 60px;
+   padding: 20px;
+   border-radius: 10px;
+   font-size: 20px;
+   font-weight: bold;
+   border: 2px solid grey;
+   height: 515px;
+}
+
+.theader {
+   background: LightSkyBlue;
+   margin-top: 20px;
+   margin-left: 20px;
+   padding: 10px;
+   width: 200px;
+   border-radius: 10px;
+}
+
+table {
+	width: 98%;
+	text-align: left;
+	margin-left: 20px;
+	border: 1px solid grey;
+    border-collapse: separate;
+	background: RoyalBlue;
+}
+
+th {
+	background: SkyBlue;
+	padding: 10px;
+	--width: 100px
+}
+
+td { 
+	background: LightBlue;
+	padding: 15px 10px;
+}
+
+.td1 {
+	background: SkyBlue;
+	padding: 15px 10px;
+	font-weight: bold;
+	width: 200px
+}
+
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #ffcc00;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form.contact_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    background-color: #F5DEB3;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form.film_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    color: #FFFF33;
+    background-color: #339999;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+a {
+	color: #0059b2;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+a.name {
+    color: #200086;
+   }
+
+.clear {clear: both;}
+
+div.content {
+	margin: 10px;
+}
+
+.flash {
+        margin: 10px 10px 10px 20px;
+        padding: 10px;
+	border: 1px solid #21DB56;
+	background: #AEFFC5;
+}
+
+.flash.error {
+	border: 1px solid #FF4343;
+	background: #FF9C9C;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet" />
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+	<title>Фильмотека</title>
+</head>
+<body>
+{% block content -%}
+	{% block mainmenu -%}
+
+<ul class="mainmenu">
+
+
+<li><a href="/index">Главная</a></li>
+<li><a href="/catalog">Каталог</a></li>
+<li><a href="/contacts">Обратная связь</a></li>
+
+
+<div class="rrr">
+{% if current_user.is_authenticated %}
+    <li>    </li>
+    <li><a class="navbar-brand registr" style="float:right" href="/profile" style="color:red">{{ current_user.nickname }}</a><li>
+
+
+{% else %}
+    <li><a style="float:right" href="/register">Зарегистрироваться</a></li>
+    <li><a style="float:right" href="/login">Войти</a></li>
+{% endif %}
+</div>
+
+
+<div class="logo">
+<img src="{{ url_for('static', filename='image/logo.png')}}" style="position:absolute;left: 1px; height:60px; margin-left:10px">
+</div>
+
+</ul>
+
+	{% endblock mainmenu -%}
+<div class="clear"></div>
+<div class="content">
+
+
+</div>
+{% endblock content -%}
+
+</body>
+</html>

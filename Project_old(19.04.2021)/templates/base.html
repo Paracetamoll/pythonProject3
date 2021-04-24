@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+	<title>Фильмотека</title>
+</head>
+<body>
+{% block content -%}
+	{% block mainmenu -%}
+
+
+
+<ul class="mainmenu">
+
+<!--
+<div class="logo">
+<img src="{{ url_for('static', filename='image/logo.png')}}">
+</div>
+-->
+
+<li><a href="/index">Главная</a></li>
+<li><a href="/catalog">Каталог</a></li>
+<li><a href="/auto">Авторизация</a></li>
+<li><a href="/contacts">Обратная связь</a></li>
+
+</ul>
+	{% endblock mainmenu -%}
+<div class="clear"></div>
+<div class="content">
+
+
+
+
+
+
+
+
+</div>
+{% endblock content -%}
+
+</body>
+</html>
