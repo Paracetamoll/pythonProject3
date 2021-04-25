@@ -159,6 +159,8 @@ def film_edit(film_id):
     film = db_sess.query(Films).filter((Films.id == film_id)).first()
     return render_template("film_edit.html", film=film, form=form)
 
+# Проверка коммита!
+
 
 @app.route('/profile/<user_id>', methods=['GET', 'POST'])
 def profile(user_id):
