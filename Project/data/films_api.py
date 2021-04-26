@@ -38,7 +38,7 @@ def get_one_film(film_id):
     )
 
 
-# пока не работает
+#  пока не работает
 @blueprint.route('/api/film_by_title/<string:film_title>', methods=['GET'])
 def get_one_film_by_title(film_title):
     db_sess = db_session.create_session()

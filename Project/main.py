@@ -131,7 +131,6 @@ def film_add():
         db_sess.commit()
         flash('Фильм "' + film.title + '" добавлен в каталог')
         return redirect('/catalog')
-
     return render_template("film_add.html", form=form)
 
 

@@ -16,7 +16,5 @@ class Films(SqlAlchemyBase, SerializerMixin):
     genre = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     duration = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     year = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-
-    # img = sqlalchemy.Column(sqlalchemy.Binary, nullable=True)
     modified_date = sqlalchemy.Column(sqlalchemy.DateTime,
                                       default=datetime.datetime.now)
