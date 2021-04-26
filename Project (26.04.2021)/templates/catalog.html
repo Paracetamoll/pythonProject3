@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+<style>
+   h2 {
+    margin-left: 20px;
+   }
+</style>
+<body bgcolor="#FFFAFA">
+<div class="blck_00000">
+    <h3 class="theader">Каталог</h3>
+    {% for msg in get_flashed_messages() %}
+    <div class="flash">{{msg}}</div>
+    {% endfor %}
+
+    <div class="films">
+
+        <table border="1px">
+            <th> №</th>
+            <th class="th1">Наименование</th>
+            <th> Год</th>
+            <th> Жанр</th>
+            <th> Длительность</th>
+            <th> Режиссер</th>
+            <th> Описание</th>
+
+            {% for p in res %}
+
+            <tr>
+                <td>{{loop.index}}</td>
+                <td><a class="name" href="/view/{{p[6]}}"> {{p[0]}} </a></td>
+                <td>{{p[1]}}</td>
+                <td>{{p[2]}}</td>
+                <td>{{p[3]}}</td>
+                <td>{{p[4]}}</td>
+                <td>{{p[5]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        {% if current_user.is_authenticated %}
+        <div class="bt">
+            <a href="/film_add" class="btn btn-info"> Добавить фильм в каталог </a></li>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+</body>

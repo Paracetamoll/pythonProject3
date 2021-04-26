@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+<style>
+   form {
+    margin-left: 20px;
+   }
+
+</style>
+<body bgcolor="#FFFAFA">
+<form class="film_form" action="" method="post">
+    <h1>Добавление фильма</h1>
+
+
+    {{ form.hidden_tag() }}
+
+
+    <p>
+        {{ form.title.label }}<br>
+        {{ form.title(class="form-control") }}<br>
+        {% for error in form.title.errors %}
+    <p class="alert alert-danger" role="alert">
+        {{ error }}
+    </p>
+    {% endfor %}
+    </p>
+
+    <p>
+        {{ form.year.label }}<br>
+        {{ form.year(class="form-control") }}<br>
+        {% for error in form.year.errors %}
+    <p class="alert alert-danger" role="alert">
+        {{ error }}
+    </p>
+    {% endfor %}
+    </p>
+
+    <p>
+        {{ form.genre.label }}<br>
+        {{ form.genre(class="form-control") }}<br>
+        {% for error in form.genre.errors %}
+    <p class="alert alert-danger" role="alert">
+        {{ error }}
+    </p>
+    {% endfor %}
+    </p>
+
+    <p>
+        {{ form.duration.label }}<br>
+        {{ form.duration(class="form-control") }}<br>
+        {% for error in form.duration.errors %}
+    <p class="alert alert-danger" role="alert">
+        {{ error }}
+    </p>
+    {% endfor %}
+    </p>
+
+    <p>
+        {{ form.director.label }}<br>
+        {{ form.director(class="form-control") }}<br>
+        {% for error in form.director.errors %}
+    <p class="alert alert-danger" role="alert">
+        {{ error }}
+    </p>
+    {% endfor %}
+    </p>
+
+    <p>
+        {{ form.description.label }}<br>
+        {{ form.description(class="form-control") }}<br>
+        {% for error in form.description.errors %}
+    <p class="alert alert-danger" role="alert">
+        {{ error }}
+    </p>
+    {% endfor %}
+    </p>
+
+
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+{% endblock %}
+</body>
