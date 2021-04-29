@@ -1,0 +1,15 @@
+﻿Описание API
+
+№ Операция				                Запрос	    Пример URL
+
+1 Получить список всех фильмов		    GET	        /api/films
+
+2 Получить информацию о фильме по id	GET	        /api/film/2
+
+3 Получить информацию о фильме по назв.	GET	        /api/film_by_title/Афоня
+
+4 Создать новый объект			        POST	    /api/films_create', json={'title': 'Новый фильм',
+                                                    'director': 'Новый режиссер', 'description': 'Новое описание',
+                                                    'genre': 'Драма', 'duration': '90', 'year': '1985'}
+
+5 Удалить фильм по id			        DELETE	    /api/films_delete/17
