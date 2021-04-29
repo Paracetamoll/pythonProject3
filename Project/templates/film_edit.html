@@ -69,8 +69,9 @@
         <textarea name="description" id="description" cols="87" rows="5">{{film.description}} </textarea>
     </p>
 
-    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}
     <a href="/catalog" class="btn btn-primary">Отмена</a>
+    </p>
     {{message}}
 </form>
 {% endblock %}
